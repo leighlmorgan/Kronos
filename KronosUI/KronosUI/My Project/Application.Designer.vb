@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.KronosUI.Form1
-        End Sub
+         Me.MainForm = Global.KronosUI.Admin
+      End Sub
     End Class
 End Namespace
