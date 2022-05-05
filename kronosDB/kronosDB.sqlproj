@@ -71,6 +71,7 @@
     <Build Include="Tables\dbo.DimensionGeolgicalTimeline.Table.sql" />
     <PostDeploy Include="T-SQL\Initial Population.sql" />
     <Build Include="Tables\Table1.sql" />
+    <Build Include="Stored Procedures\Procedure1.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SqlSchemaCompare.scmp" />
