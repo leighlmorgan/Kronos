@@ -9,6 +9,8 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]               
 --------------------------------------------------------------------------------------
 */
+/* Dummy comment */
+
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Hadean','Cryptic','','','',4567000000,4499999999) 
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Hadean','Basin Groups','','','',4500000000,4299999999) 
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Hadean','Nectarian','','','',4300000000,4099999999) 
