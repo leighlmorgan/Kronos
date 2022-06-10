@@ -1,16 +1,14 @@
-CREATE TABLE dbo.DimensionGeologicalTimeline (
-	GeologicalTimelineID INT IDENTITY(1,1) NOT NULL,
-	Eon VARCHAR(100) NOT NULL,
-	Era VARCHAR(100) NOT NULL,
-	Epoch VARCHAR(100) NOT NULL,
-	Period VARCHAR(100) NOT NULL,
-	Age VARCHAR(100) NOT NULL,
-	[Started (Years Ago)] BIGINT NOT NULL,
-	[Ended (Years Ago)] BIGINT NOT NULL
-)
-
-/*
-
+ï»¿/*
+Post-Deployment Script Template                     
+--------------------------------------------------------------------------------------
+ This file contains SQL statements that will be appended to the build script.      
+ Use SQLCMD syntax to include a file in the post-deployment script.         
+ Example:      :r .\myfile.sql                        
+ Use SQLCMD syntax to reference a variable in the post-deployment script.      
+ Example:      :setvar TableName MyTable                     
+               SELECT * FROM [$(TableName)]               
+--------------------------------------------------------------------------------------
+*/
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Hadean','Cryptic','','','',4567000000,4499999999) 
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Hadean','Basin Groups','','','',4500000000,4299999999) 
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Hadean','Nectarian','','','',4300000000,4099999999) 
@@ -40,7 +38,7 @@ INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Star
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Paleozoic','Cambrian','Furongian','Jiangshanian',494000000,489499999) 
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Paleozoic','Cambrian','Furongian','Stage 10',489500000,485399999) 
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Paleozoic','Ordovician','Early/Lower','Tremadocian',485400000,477699999) 
-INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Paleozoic','Ordovician','Early/Lower','Floian (formerly Arenig)',477700000,469999999) 
+INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Paleozoic','Ordovician','Early/Lower','Floian (formerlyÂ Arenig)',477700000,469999999) 
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Paleozoic','Ordovician','Middle','Dapingian',470000000,467299999) 
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Paleozoic','Ordovician','Middle','Darriwilian',467300000,458399999) 
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Paleozoic','Ordovician','Later/Upper','Sandbian',458400000,452999999) 
@@ -62,7 +60,7 @@ INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Star
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Paleozoic','Devonian','Later/Upper','Frasnian',382700000,372199999) 
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Paleozoic','Devonian','Later/Upper','Famennian',372200000,358899999) 
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Paleozoic','Carboniferous','Mississippian','Tournaisian',358900000,346699999) 
-INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Paleozoic','Carboniferous','Mississippian','Viséan',346700000,330899999) 
+INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Paleozoic','Carboniferous','Mississippian','VisÃ©an',346700000,330899999) 
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Paleozoic','Carboniferous','Mississippian','Serpukhovian',330900000,323199999) 
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Paleozoic','Carboniferous','Pennsylvanian','Bashkirian',323200000,315199999) 
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Paleozoic','Carboniferous','Pennsylvanian','Moscovian',315200000,306999999) 
@@ -126,8 +124,6 @@ INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Star
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Cenozoic','Neogene','Pliocene','Piacenzian/Blancan',3600000,2587999) 
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Cenozoic','Quaternary','Pleistocene','Gelasian',2588000,1805999) 
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Cenozoic','Quaternary','Pleistocene','Calabrian',1806000,780999) 
-INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Cenozoic','Quaternary','Pleistocene','Middle (formerly Ionian)',781000,125999) 
+INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Cenozoic','Quaternary','Pleistocene','MiddleÂ (formerly Ionian)',781000,125999) 
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Cenozoic','Quaternary','Pleistocene','Late/Upper',126000,11699) 
 INSERT dbo.DimensionGeologicalTimeline ([Eon],[Era],[Epoch],[Period],[Age],[Started (Years Ago)],[Ended (Years Ago)]) VALUES ('Phanerozoic','Cenozoic','Quaternary','Holocene','',11700,0) 
-
-*/

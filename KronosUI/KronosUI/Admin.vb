@@ -2,9 +2,7 @@
 
   Public Sub SomeFunction()
 
-    Dim x As Integer
 
-
-  End Sub
+   End Sub
 
 End Class
